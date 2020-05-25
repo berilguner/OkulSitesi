@@ -20,14 +20,13 @@
     <!-- Sidebar -->
     <div class="bg-light border-right" id="sidebar-wrapper">
       <div class="list-group list-group-flush">
-        <a href="#" class="list-group-item list-group-item-action bg-light">Anasayfa</a>
+      
         <a href="/universite/universite_listesi.aspx" class="list-group-item list-group-item-action bg-light">Üniversite İşlemleri</a>
         <a href="/fakulte/fakulte_listesi.aspx" class="list-group-item list-group-item-action bg-light">Fakülte İşlemleri</a>
         <a href="/bolum/bolum_listesi.aspx" class="list-group-item list-group-item-action bg-light">Bölüm İşlemleri</a>
-        <a href="/ogrenci/ogrenci_listesi.aspx" class="list-group-item list-group-item-action bg-light">Öğrenci İşlemleri</a>
-          <a href="/profesor/profesor_listesi.aspx" class="list-group-item list-group-item-action bg-light">Profesör İşlemleri</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Yardım</a>
-      </div>
+        <a href="/cikis/cikis.aspx" class="list-group-item list-group-item-action bg-light">ÇIKIŞ</a>
+      &nbsp;</div>
     </div>
     <!-- /#sidebar-wrapper -->
 

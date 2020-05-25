@@ -1,11 +1,12 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="off.WebForm1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm2.aspx.cs" Inherits="off.WebForm2" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+
+      <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
      <script src="/assets/js/bootstrap.min.js" ></script>
     <style>
 
@@ -54,28 +55,26 @@
 
 
     </style>
+    
 </head>
 <body>
     <form id="form1" runat="server">
-         
+     
         <div class="loginbox">
-          
-        
-            <h2 class="input">YÖNETİCİ GİRİŞ</h2>
 
-            <asp:TextBox ID="txtuser" CssClass="input" placeholder="Kullanıcı Adı" runat="server"></asp:TextBox><br /><br />
-            <asp:TextBox ID="txtpass" CssClass="input" placeholder="Parola" TextMode="Password" runat="server"></asp:TextBox><br /><br />
+            <h2 class="input">ÖĞRETİM ÜYESİ GİRİŞ</h2>
 
+            <asp:TextBox ID="txtUsername" CssClass="input" placeholder="Kullanıcı Adı" runat="server"></asp:TextBox><br /><br />
+            <asp:TextBox ID="txtPassword" CssClass="input" placeholder="Parola" TextMode="Password" runat="server"></asp:TextBox><br /><br />
+
+            <asp:Button ID="btnlogin" CssClass="btn btn-light" width="100%" runat="server" OnClick="btnlogin_Click" Text="GİRİŞ" />
+        <br />
+        <br />
+        <asp:Label ID="lblMsg" runat="server" Font-Bold="True"></asp:Label>
            
-
-
-            <asp:Button ID="btnlogin" CssClass="btn btn-light" width="100%" runat="server" Text="GİRİŞ" OnClick="btnlogin_Click" /><br /><br />
-            <asp:Button ID="Button1" CssClass="btn btn-light" Width="100%" runat="server" Text="ÖĞRETİM ÜYESİ GİRİŞ" OnClick="Button1_Click"  />
         </div>
-       
+      
+      
     </form>
-
-      <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

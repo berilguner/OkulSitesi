@@ -18,5 +18,7 @@ namespace off.universite
             universiteList.DataBind(); //verileri aktarma işlemi liste sayfasına
 
         }
+
+       
     }
 }
