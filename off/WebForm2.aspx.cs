@@ -45,8 +45,6 @@ namespace off
                 lblMsg.ForeColor = System.Drawing.Color.Red;
             }
             con.Close();
-
-
         }
     }
 }

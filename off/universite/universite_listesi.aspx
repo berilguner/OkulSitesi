@@ -15,7 +15,9 @@
 </head>
 <body>
    
+   
     <div class="d-flex" id="wrapper">
+
 
     <!-- Sidebar -->
     <div class="bg-light border-right" id="sidebar-wrapper">
@@ -25,8 +27,9 @@
         <a href="/fakulte/fakulte_listesi.aspx" class="list-group-item list-group-item-action bg-light">Fakülte İşlemleri</a>
         <a href="/bolum/bolum_listesi.aspx" class="list-group-item list-group-item-action bg-light">Bölüm İşlemleri</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Yardım</a>
-        <a href="/cikis/cikis.aspx" class="list-group-item list-group-item-action bg-light">ÇIKIŞ</a>
-      &nbsp;</div>
+        
+      &nbsp;
+        </div>
     </div>
     <!-- /#sidebar-wrapper -->
 
@@ -74,14 +77,18 @@
  
                          </table>
 
-                         <a class="btn btn-primary" href ="/universite/universite_ekle.aspx">Üniversite Ekle</a>
+                         <a class="btn btn-primary" href ="/universite/universite_ekle.aspx">Üniversite Ekle</a><br /><br /><br /><br />
+                        
+                     
         
                      </form>
+
 
 
             
 
                 </div>
+                
             </div>
         </div>
 

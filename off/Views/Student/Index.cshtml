@@ -1,0 +1,28 @@
+﻿@model IEnumerable<off.Models.ogrenci>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Ara</h2>
+@using (Html.BeginForm("Index", "Student", FormMethod.Get))
+{
+    @Html.TextBox("searching")
+    <input type ="submit" value="submit"/>
+
+}
+<table>
+    <tr>
+        <th>Öğrenci Adı Soyadı</th>
+    </tr>
+    @foreach(var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem=>item.ogrenci_adi)</td>
+        </tr>
+    }
+
+
+
+</table>
+

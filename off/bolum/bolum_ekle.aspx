@@ -25,8 +25,8 @@
         <a href="/universite/universite_listesi.aspx" class="list-group-item list-group-item-action bg-light">Üniversite İşlemleri</a>
         <a href="/fakulte/fakulte_listesi.aspx" class="list-group-item list-group-item-action bg-light">Fakülte İşlemleri</a>
         <a href="/bolum/bolum_listesi.aspx" class="list-group-item list-group-item-action bg-light">Bölüm İşlemleri</a>
-      
         <a href="#" class="list-group-item list-group-item-action bg-light">Yardım</a>
+        <a href="/WebForm1.aspx" class="list-group-item list-group-item-action bg-light"></a>
       </div>
     </div>
     <!-- /#sidebar-wrapper -->
@@ -39,20 +39,19 @@
                      <form id="form2" runat="server">
                          <h3>Bölüm Ekle</h3>
                           <div class="form-group">
-                                <label for="txtUniversiteAdi">Üniversite Adı</label>
+                              <label for="txtUniversiteAdi">Üniversite Adı</label>
                                
                               <asp:DropDownList runat="server" CssClass="form-control" ID="universiteCombo" AutoPostBack="true" >
                                   
                               </asp:DropDownList>
                           </div>
                           <div class="form-group">
-                                <label for="txtFakulteAdi">Fakülte Adı</label>
+                              <label for="txtFakulteAdi">Fakülte Adı</label>
                                
                               <asp:DropDownList runat="server" CssClass="form-control" ID="fakulteCombo" AutoPostBack="true" >
                                   
                               </asp:DropDownList>
                           </div>
-
 
                           <div class="form-group">
                                 <label for="txtBolumAdi">Bölüm Adı</label>

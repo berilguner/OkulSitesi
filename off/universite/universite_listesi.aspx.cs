@@ -11,14 +11,16 @@ namespace off.universite
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
             DataSet1TableAdapters.universiteTableAdapter univ = new DataSet1TableAdapters.universiteTableAdapter();
             universiteList.DataSource = univ.UniversiteListesiGetir();
             //universiteList in data kaynagını benim databaseden cektigim verileri aktar
             // ve bunu ona bagla
             universiteList.DataBind(); //verileri aktarma işlemi liste sayfasına
+        
 
         }
 
-       
+        
     }
 }

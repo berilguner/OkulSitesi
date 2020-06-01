@@ -37,7 +37,9 @@ namespace off
             }
             else
             {
-                Response.Write("Giriş Başarısız!");
+                Label1.Text = "Kullanıcı veya Şifre Yanlış...";
+                Label1.ForeColor = System.Drawing.Color.Red;
+                //Response.Write("Kullanıcı veya Şifre Yanlış...");
             }
         }
 

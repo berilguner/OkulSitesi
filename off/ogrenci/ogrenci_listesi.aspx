@@ -23,7 +23,7 @@
        
         <a href="/ogrenci/ogrenci_listesi.aspx" class="list-group-item list-group-item-action bg-light">Öğrenci İşlemleri</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Yardım</a>
-        <a href="/cikis/cikis.aspx" class="list-group-item list-group-item-action bg-light">ÇIKIŞ</a>
+        <a href="/WebForm1.aspx" class="list-group-item list-group-item-action bg-light">ÇIKIŞ</a>
       </div>
     </div>
     <!-- /#sidebar-wrapper -->
@@ -75,7 +75,7 @@
  
                          </table>
 
-                         <a class="btn btn-primary" href ="/ogrenci/ogrenci_ekle.aspx">Öğrenci Ekle</a>
+                         <a class="btn btn-primary" href ="/ogrenci/ogrenci_ekle.aspx">Öğrenci Ekle</a><br /><br />
                         
                          
         
@@ -101,6 +101,9 @@
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Menu Toggle Script -->
+
+
+    
 
 
 </body>

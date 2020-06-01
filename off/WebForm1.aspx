@@ -70,12 +70,14 @@
 
 
             <asp:Button ID="btnlogin" CssClass="btn btn-light" width="100%" runat="server" Text="GİRİŞ" OnClick="btnlogin_Click" /><br /><br />
-            <asp:Button ID="Button1" CssClass="btn btn-light" Width="100%" runat="server" Text="ÖĞRETİM ÜYESİ GİRİŞ" OnClick="Button1_Click"  />
+            <asp:Button ID="Button1" CssClass="btn btn-light" Width="100%" runat="server" Text="ÖĞRETİM ÜYESİ GİRİŞ" OnClick="Button1_Click"  /><br /><br />
+            <asp:Label ID="Label1" runat="server" Font-Bold="True"></asp:Label>
         </div>
+       
+      <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
        
     </form>
 
-      <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-</body>
+      </body>
 </html>

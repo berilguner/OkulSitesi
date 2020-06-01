@@ -26,8 +26,8 @@
         <a href="/universite/universite_listesi.aspx" class="list-group-item list-group-item-action bg-light">Üniversite İşlemleri</a>
         <a href="/fakulte/fakulte_listesi.aspx" class="list-group-item list-group-item-action bg-light">Fakülte İşlemleri</a>
         <a href="/bolum/bolum_listesi.aspx" class="list-group-item list-group-item-action bg-light">Bölüm İşlemleri</a>
-       
         <a href="#" class="list-group-item list-group-item-action bg-light">Yardım</a>
+        <a href="/WebForm1.aspx" class="list-group-item list-group-item-action bg-light"></a>
       </div>
     </div>
     <!-- /#sidebar-wrapper -->
@@ -79,7 +79,18 @@
  
                          </table>
 
-                         <a class="btn btn-primary" href ="/bolum/bolum_ekle.aspx">Bölüm Ekle</a>
+                         <a class="btn btn-primary" href ="/bolum/bolum_ekle.aspx">Bölüm Ekle</a><br /><br />
+                          <div>
+           
+            Ara: <asp:TextBox ID="Txtsearch" runat="server"></asp:TextBox>
+            <asp:Button ID="ButSearch" class="btn btn-primary" runat="server" Text="Ara" OnClick="ButSearch_Click" />
+            <hr />
+            <asp:GridView ID="GridView1" runat="server" ShowHeaderWhenEmpty="true" EmptyDataText="Kayıt Bulunamadı!">
+
+            </asp:GridView>
+         
+        </div>
+                        
         
                      </form>
 

@@ -231,7 +231,7 @@ FROM     bolum</CommandText>
               <Mapping SourceColumn="fakulte_id" DataSetColumn="fakulte_id" />
             </Mappings>
             <Sources>
-              <DbSource ConnectionRef="okul_ConnectionString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="BolumEkle" Modifier="Public" Name="BolumEkle" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="BolumEkle">
+              <DbSource ConnectionRef="okul_ConnectionString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="BolumEkle" Modifier="Public" Name="BolumEkle" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="BolumEkle">
                 <InsertCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>INSERT INTO [bolum] ([bolum_adi], [fakulte_id]) VALUES (@bolum_adi, @fakulte_id)</CommandText>
@@ -242,7 +242,7 @@ FROM     bolum</CommandText>
                   </DbCommand>
                 </InsertCommand>
               </DbSource>
-              <DbSource ConnectionRef="okul_ConnectionString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="BolumGuncelle" Modifier="Public" Name="BolumGuncelle" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="BolumGuncelle">
+              <DbSource ConnectionRef="okul_ConnectionString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="BolumGuncelle" Modifier="Public" Name="BolumGuncelle" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="BolumGuncelle">
                 <UpdateCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>UPDATE [bolum] SET [bolum_adi] = @bolum_adi, [fakulte_id] = @fakulte_id WHERE (([bolum_id] = @Original_bolum_id))</CommandText>
@@ -254,7 +254,7 @@ FROM     bolum</CommandText>
                   </DbCommand>
                 </UpdateCommand>
               </DbSource>
-              <DbSource ConnectionRef="okul_ConnectionString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="BolumSil" Modifier="Public" Name="BolumSil" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="BolumSil">
+              <DbSource ConnectionRef="okul_ConnectionString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="BolumSil" Modifier="Public" Name="BolumSil" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="BolumSil">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>DELETE FROM [bolum] WHERE (([bolum_id] = @Original_bolum_id))</CommandText>
@@ -335,7 +335,7 @@ WHERE (([ogrenci_id] = @Original_ogrenci_id))</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="okul_ConnectionString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="OgrenciEkle" Modifier="Public" Name="OgrenciEkle" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="OgrenciEkle">
+              <DbSource ConnectionRef="okul_ConnectionString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="OgrenciEkle" Modifier="Public" Name="OgrenciEkle" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="OgrenciEkle">
                 <InsertCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>INSERT INTO [ogrenci] ([ogrenci_adi], [bolum_id]) VALUES (@ogrenci_adi, @bolum_id)</CommandText>
@@ -346,7 +346,7 @@ WHERE (([ogrenci_id] = @Original_ogrenci_id))</CommandText>
                   </DbCommand>
                 </InsertCommand>
               </DbSource>
-              <DbSource ConnectionRef="okul_ConnectionString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="OgrenciGuncelle" Modifier="Public" Name="OgrenciGuncelle" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="OgrenciGuncelle">
+              <DbSource ConnectionRef="okul_ConnectionString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="OgrenciGuncelle" Modifier="Public" Name="OgrenciGuncelle" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="OgrenciGuncelle">
                 <UpdateCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>UPDATE [ogrenci] SET [ogrenci_adi] = @ogrenci_adi, [bolum_id] = @bolum_id WHERE (([ogrenci_id] = @Original_ogrenci_id))</CommandText>
@@ -358,7 +358,7 @@ WHERE (([ogrenci_id] = @Original_ogrenci_id))</CommandText>
                   </DbCommand>
                 </UpdateCommand>
               </DbSource>
-              <DbSource ConnectionRef="okul_ConnectionString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="OgrenciSil" Modifier="Public" Name="OgrenciSil" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="OgrenciSil">
+              <DbSource ConnectionRef="okul_ConnectionString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="OgrenciSil" Modifier="Public" Name="OgrenciSil" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="OgrenciSil">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>DELETE FROM [ogrenci] WHERE (([ogrenci_id] = @Original_ogrenci_id))</CommandText>
@@ -378,7 +378,7 @@ WHERE (([ogrenci_id] = @Original_ogrenci_id))</CommandText>
   <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="universite" msprop:Generator_TableClassName="universiteDataTable" msprop:Generator_TableVarName="tableuniversite" msprop:Generator_RowChangedName="universiteRowChanged" msprop:Generator_TablePropName="universite" msprop:Generator_RowDeletingName="universiteRowDeleting" msprop:Generator_RowChangingName="universiteRowChanging" msprop:Generator_RowEvHandlerName="universiteRowChangeEventHandler" msprop:Generator_RowDeletedName="universiteRowDeleted" msprop:Generator_RowClassName="universiteRow" msprop:Generator_UserTableName="universite" msprop:Generator_RowEvArgName="universiteRowChangeEvent">
+        <xs:element name="universite" msprop:Generator_TableClassName="universiteDataTable" msprop:Generator_TableVarName="tableuniversite" msprop:Generator_TablePropName="universite" msprop:Generator_RowDeletingName="universiteRowDeleting" msprop:Generator_RowChangingName="universiteRowChanging" msprop:Generator_RowEvHandlerName="universiteRowChangeEventHandler" msprop:Generator_RowDeletedName="universiteRowDeleted" msprop:Generator_UserTableName="universite" msprop:Generator_RowChangedName="universiteRowChanged" msprop:Generator_RowEvArgName="universiteRowChangeEvent" msprop:Generator_RowClassName="universiteRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="universite_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnuniversite_id" msprop:Generator_ColumnPropNameInRow="universite_id" msprop:Generator_ColumnPropNameInTable="universite_idColumn" msprop:Generator_UserColumnName="universite_id" type="xs:int" />
@@ -392,7 +392,7 @@ WHERE (([ogrenci_id] = @Original_ogrenci_id))</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="fakulte" msprop:Generator_TableClassName="fakulteDataTable" msprop:Generator_TableVarName="tablefakulte" msprop:Generator_RowChangedName="fakulteRowChanged" msprop:Generator_TablePropName="fakulte" msprop:Generator_RowDeletingName="fakulteRowDeleting" msprop:Generator_RowChangingName="fakulteRowChanging" msprop:Generator_RowEvHandlerName="fakulteRowChangeEventHandler" msprop:Generator_RowDeletedName="fakulteRowDeleted" msprop:Generator_RowClassName="fakulteRow" msprop:Generator_UserTableName="fakulte" msprop:Generator_RowEvArgName="fakulteRowChangeEvent">
+        <xs:element name="fakulte" msprop:Generator_TableClassName="fakulteDataTable" msprop:Generator_TableVarName="tablefakulte" msprop:Generator_TablePropName="fakulte" msprop:Generator_RowDeletingName="fakulteRowDeleting" msprop:Generator_RowChangingName="fakulteRowChanging" msprop:Generator_RowEvHandlerName="fakulteRowChangeEventHandler" msprop:Generator_RowDeletedName="fakulteRowDeleted" msprop:Generator_UserTableName="fakulte" msprop:Generator_RowChangedName="fakulteRowChanged" msprop:Generator_RowEvArgName="fakulteRowChangeEvent" msprop:Generator_RowClassName="fakulteRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="fakulte_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnfakulte_id" msprop:Generator_ColumnPropNameInRow="fakulte_id" msprop:Generator_ColumnPropNameInTable="fakulte_idColumn" msprop:Generator_UserColumnName="fakulte_id" type="xs:int" />
@@ -407,7 +407,7 @@ WHERE (([ogrenci_id] = @Original_ogrenci_id))</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="bolum" msprop:Generator_TableClassName="bolumDataTable" msprop:Generator_TableVarName="tablebolum" msprop:Generator_TablePropName="bolum" msprop:Generator_RowDeletingName="bolumRowDeleting" msprop:Generator_RowChangingName="bolumRowChanging" msprop:Generator_RowEvHandlerName="bolumRowChangeEventHandler" msprop:Generator_RowDeletedName="bolumRowDeleted" msprop:Generator_UserTableName="bolum" msprop:Generator_RowChangedName="bolumRowChanged" msprop:Generator_RowEvArgName="bolumRowChangeEvent" msprop:Generator_RowClassName="bolumRow">
+        <xs:element name="bolum" msprop:Generator_TableClassName="bolumDataTable" msprop:Generator_TableVarName="tablebolum" msprop:Generator_RowChangedName="bolumRowChanged" msprop:Generator_TablePropName="bolum" msprop:Generator_RowDeletingName="bolumRowDeleting" msprop:Generator_RowChangingName="bolumRowChanging" msprop:Generator_RowEvHandlerName="bolumRowChangeEventHandler" msprop:Generator_RowDeletedName="bolumRowDeleted" msprop:Generator_RowClassName="bolumRow" msprop:Generator_UserTableName="bolum" msprop:Generator_RowEvArgName="bolumRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="bolum_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnbolum_id" msprop:Generator_ColumnPropNameInRow="bolum_id" msprop:Generator_ColumnPropNameInTable="bolum_idColumn" msprop:Generator_UserColumnName="bolum_id" type="xs:int" />
@@ -422,7 +422,7 @@ WHERE (([ogrenci_id] = @Original_ogrenci_id))</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="ogrenci" msprop:Generator_TableClassName="ogrenciDataTable" msprop:Generator_TableVarName="tableogrenci" msprop:Generator_TablePropName="ogrenci" msprop:Generator_RowDeletingName="ogrenciRowDeleting" msprop:Generator_RowChangingName="ogrenciRowChanging" msprop:Generator_RowEvHandlerName="ogrenciRowChangeEventHandler" msprop:Generator_RowDeletedName="ogrenciRowDeleted" msprop:Generator_UserTableName="ogrenci" msprop:Generator_RowChangedName="ogrenciRowChanged" msprop:Generator_RowEvArgName="ogrenciRowChangeEvent" msprop:Generator_RowClassName="ogrenciRow">
+        <xs:element name="ogrenci" msprop:Generator_TableClassName="ogrenciDataTable" msprop:Generator_TableVarName="tableogrenci" msprop:Generator_RowChangedName="ogrenciRowChanged" msprop:Generator_TablePropName="ogrenci" msprop:Generator_RowDeletingName="ogrenciRowDeleting" msprop:Generator_RowChangingName="ogrenciRowChanging" msprop:Generator_RowEvHandlerName="ogrenciRowChangeEventHandler" msprop:Generator_RowDeletedName="ogrenciRowDeleted" msprop:Generator_RowClassName="ogrenciRow" msprop:Generator_UserTableName="ogrenci" msprop:Generator_RowEvArgName="ogrenciRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ogrenci_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnogrenci_id" msprop:Generator_ColumnPropNameInRow="ogrenci_id" msprop:Generator_ColumnPropNameInTable="ogrenci_idColumn" msprop:Generator_UserColumnName="ogrenci_id" type="xs:int" />

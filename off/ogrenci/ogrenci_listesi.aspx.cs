@@ -41,22 +41,32 @@ namespace off.ogrenci
 
         }
 
-       // protected void Button1_Click(object sender, EventArgs e)
-       // {
-       //    string find = "select * from ogrenci where (ogrenci_adi like '%' + @ogrenci_adi + '%')";
-       //     SqlCommand comm = new SqlCommand(find, con);
-       //     comm.Parameters.Add("@ogrenci_adi", SqlDbType.NVarChar).Value = TextBox1.Text;
-       //     con.Open();
-       
-       //     comm.ExecuteNonQuery();
-       //     SqlDataAdapter da = new SqlDataAdapter();
-       //     da.SelectCommand = comm;
-       //     DataSet ds = new DataSet();
-       //     da.Fill(ds, "ogrenci_adi");
-       //    GridView1.DataSource = ds;
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/off/Views/Student/Index.cshtml");
+        }
 
-       //     con.Close();
+        protected void ButSearch_Click(object sender, EventArgs e)
+        {
+           
+        }
 
-       // }
+        // protected void Button1_Click(object sender, EventArgs e)
+        // {
+        //    string find = "select * from ogrenci where (ogrenci_adi like '%' + @ogrenci_adi + '%')";
+        //     SqlCommand comm = new SqlCommand(find, con);
+        //     comm.Parameters.Add("@ogrenci_adi", SqlDbType.NVarChar).Value = TextBox1.Text;
+        //     con.Open();
+
+        //     comm.ExecuteNonQuery();
+        //     SqlDataAdapter da = new SqlDataAdapter();
+        //     da.SelectCommand = comm;
+        //     DataSet ds = new DataSet();
+        //     da.Fill(ds, "ogrenci_adi");
+        //    GridView1.DataSource = ds;
+
+        //     con.Close();
+
+        // }
     }
 }

@@ -25,7 +25,7 @@
         <a href="/fakulte/fakulte_listesi.aspx" class="list-group-item list-group-item-action bg-light">Fakülte İşlemleri</a>
         <a href="/bolum/bolum_listesi.aspx" class="list-group-item list-group-item-action bg-light">Bölüm İşlemleri</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Yardım</a>
-        <a href="/cikis/cikis.aspx" class="list-group-item list-group-item-action bg-light">ÇIKIŞ</a>
+        <a href="/WebForm1.aspx" class="list-group-item list-group-item-action bg-light"></a>
       </div>
     </div>
     <!-- /#sidebar-wrapper -->
@@ -42,7 +42,7 @@
                                 <asp:TextBox runat="server" ID="txtUniversiteAdi" CssClass="form-control" placeholder="Gazi Üniversitesi..." />
                           </div>
                                 <asp:Button Text="Kaydet" ID="btnKaydet" CssClass="btn btn-info" runat="server" OnClick="btnKaydet_Click" />
-                                <a class="btn btn-danger" href="/universie/universite_listesi.aspx">İptal</a> <!--asp yapmamiza gerek yok cunku arka tarafta veritabanıyla bir işimiz yok.-->
+                                <a class="btn btn-danger" href="/universite/universite_listesi.aspx">İptal</a> <!--asp yapmamiza gerek yok cunku arka tarafta veritabanıyla bir işimiz yok.-->
                      </form>
                 </div>
             </div>

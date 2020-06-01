@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="cikis.aspx.cs" Inherits="off.cikis" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="cikis.aspx.cs" Inherits="off.cikis.cikis" %>
 
 <!DOCTYPE html>
 
