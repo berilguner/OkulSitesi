@@ -19,7 +19,7 @@
    
     <div class="d-flex" id="wrapper">
 
-    <!-- Sidebar --><!-- ... -->
+    <!-- Sidebar --><!-- ... --><!-- ... -->
     <div class="bg-light border-right" id="sidebar-wrapper">
       <div class="list-group list-group-flush">
        
