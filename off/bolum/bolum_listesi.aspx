@@ -87,7 +87,9 @@
             <hr />
             <asp:GridView ID="GridView1" runat="server" ShowHeaderWhenEmpty="true" EmptyDataText="Kayıt Bulunamadı!">
 
-            </asp:GridView>
+            </asp:GridView> <br /><br />
+
+                                 <asp:Button ID="Button1" CssClass="btn btn-light" runat="server" OnClick="Button1_Click" Text="ÇIKIŞ" />
          
         </div>
                         
@@ -114,6 +116,7 @@
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Menu Toggle Script -->
+
 
 
 </body>

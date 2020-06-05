@@ -57,5 +57,13 @@ namespace off.bolum
             GridView1.DataSource = dt;
             GridView1.DataBind();
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
+            Session["user"] = null;
+            Response.Redirect("/WebForm1.aspx");
+
+        }
     }
 }

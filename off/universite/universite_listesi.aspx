@@ -77,7 +77,9 @@
  
                          </table>
 
-                         <a class="btn btn-primary" href ="/universite/universite_ekle.aspx">Üniversite Ekle</a><br /><br /><br /><br />
+                         <a class="btn btn-primary" href ="/universite/universite_ekle.aspx">Üniversite Ekle</a><br /><br />
+                         <asp:Button ID="Button1" CssClass ="btn btn-light" runat="server" OnClick="Button1_Click" Text="ÇIKIŞ" />
+                         <br /><br />
                         
                      
         

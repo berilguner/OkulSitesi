@@ -77,7 +77,11 @@
  
                          </table>
 
-                         <a class="btn btn-primary" href ="/fakulte/fakulte_ekle.aspx">Fakülte Ekle</a>
+                         <a class="btn btn-primary" href ="/fakulte/fakulte_ekle.aspx">Fakülte Ekle</a><br /><br />
+                         
+   
+        <asp:Button ID="Button1" CssClass="btn btn-light" runat="server" OnClick="Button1_Click" Text="ÇIKIŞ" />
+
         
                      </form>
 
@@ -101,6 +105,8 @@
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Menu Toggle Script -->
+
+
 
 
 </body>
